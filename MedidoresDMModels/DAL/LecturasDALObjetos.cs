@@ -7,39 +7,18 @@ using System.Threading.Tasks;
 
 namespace MedidoresDMModels.DAL
 {
-    public class LecturasDALObjetos : ILecturasDAL
+    public class LecturaDALObjetos : ILecturasDAL
     {
-        private static List<Lectura> lecturas = new List<Lectura>();
+        private static List<Lectura> listaLecturas = new List<Lectura>();
 
-        public List<Lectura> ObtenerLecturas(string numeroSerie)
+        public List<Lectura> ObtenerLecturas()
         {
-
-            var lecturasFiltradas = new List<Lectura>();
-
-
-            var todasLasLecturas = LecturasDALObjetos.lecturas;
-
-
-            foreach (var lectura in todasLasLecturas)
-            {
-                if (lectura.Medidor != null && lectura.Medidor.NumeroSerie == numeroSerie)
-                {
-                    lecturasFiltradas.Add(lectura);
-                }
-            }
-
-            return lecturasFiltradas;
+            return listaLecturas;
         }
-
-        public List<Lectura> ObtenerLecturasPorMedidor(string numeroSerie)
-        {
-            return lecturas.FindAll(l => l.MedidorNumeroSerie == numeroSerie);
-        }
-
 
         public void AgregarLectura(Lectura lectura)
         {
-            lecturas.Add(lectura);
+            listaLecturas.Add(lectura);
         }
     }
-}
+
