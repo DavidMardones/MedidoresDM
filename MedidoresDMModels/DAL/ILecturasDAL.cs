@@ -10,6 +10,7 @@ namespace MedidoresDMModels.DAL
     public interface ILecturasDAL
     {
         List<Lectura> ObtenerLecturas();
+        List<Lectura> ObtenerLecturasPorMedidor(string numeroSerie);
         void AgregarLectura(Lectura lectura);
     }
 }

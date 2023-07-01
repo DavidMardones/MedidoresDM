@@ -14,5 +14,4 @@ namespace MedidoresDMModels.DTO
         public string NumeroSerie { get => numeroSerie; set => numeroSerie = value; }
         public string Tipo { get => tipo; set => tipo = value; }
     }
-
 }

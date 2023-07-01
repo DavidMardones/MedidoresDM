@@ -7,17 +7,17 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-public class MedidorDALObjetos : IMedidorDAL
-{
-    private static List<Medidor> listaMedidores = new List<Medidor>();
-
-    public List<Medidor> ObtenerMedidores()
+    public static class MedidoresDALObjetos : IMedidoresDAL
     {
-        return listaMedidores;
-    }
+        private static List<Medidor> medidores = new List<Medidor>();
 
-    public void AgregarMedidor(Medidor medidor)
-    {
-        listaMedidores.Add(medidor);
+        public static List<Medidor> ObtenerMedidores()
+        {
+            return medidores;
+        }
+
+        public static void AgregarMedidor(Medidor medidor)
+        {
+            medidores.Add(medidor);
+        }
     }
-}

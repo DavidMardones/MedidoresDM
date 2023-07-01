@@ -11,7 +11,7 @@ namespace MedidoresDM
 {
 
 
-    public partial class IngresarMedidor
+    public partial class MostrarLecturas
     {
 
         /// <summary>
@@ -24,39 +24,21 @@ namespace MedidoresDM
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control lblNumeroSerie.
+        /// Control ddlMedidor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNumeroSerie;
+        protected global::System.Web.UI.WebControls.DropDownList ddlMedidor;
 
         /// <summary>
-        /// Control txtNumeroSerie.
+        /// Control gvLecturas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNumeroSerie;
-
-        /// <summary>
-        /// Control rfvNumeroSerie.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNumeroSerie;
-
-        /// <summary>
-        /// Control btnGuardar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGuardar;
+        protected global::System.Web.UI.WebControls.GridView gvLecturas;
     }
 }

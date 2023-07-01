@@ -10,6 +10,7 @@ namespace MedidoresDMModels.DAL
     public interface IMedidorDAL
     {
         List<Medidor> ObtenerMedidores();
-
+        void AgregarMedidor(Medidor medidor);
+        bool ExisteMedidor(string numeroSerie);
     }
 }
