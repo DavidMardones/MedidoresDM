@@ -7,17 +7,22 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-    public static class MedidoresDALObjetos : IMedidoresDAL
+public class MedidoresDALObjetos : IMedidorDAL
+{
+    private List<Medidor> medidores = new List<Medidor>();
+
+    public List<Medidor> ObtenerMedidores()
     {
-        private static List<Medidor> medidores = new List<Medidor>();
-
-        public static List<Medidor> ObtenerMedidores()
-        {
-            return medidores;
-        }
-
-        public static void AgregarMedidor(Medidor medidor)
-        {
-            medidores.Add(medidor);
-        }
+        return medidores;
     }
+
+    public void AgregarMedidor(Medidor medidor)
+    {
+        medidores.Add(medidor);
+    }
+
+    public bool ExisteMedidor(string numeroSerie)
+    {
+        return medidores.Exists(m => m.NumeroSerie == numeroSerie);
+    }
+}
