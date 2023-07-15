@@ -47,17 +47,12 @@
             <asp:ContentPlaceHolder ID="MapaSitio" runat="server">
 
                 <div class="mapa-sitio">
-                    <h2>Mapa del Sitio</h2>
                     <asp:SiteMapPath ID="SiteMapPath1" runat="server" />
                 </div>
             </asp:ContentPlaceHolder>
         </div>
 
-        <footer>
-            <div class="container">
-                <p>&copy; 2023 MedidoresDM. Todos los derechos reservados.</p>
-            </div>
-        </footer>
+       
     </form>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
