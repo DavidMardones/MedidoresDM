@@ -1,4 +1,4 @@
-﻿using MedidoresDMModels.DTO;
+﻿    using MedidoresDMModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,6 @@ namespace MedidoresDMModels.DAL
     public interface ILecturasDAL
     {
         List<Lectura> ObtenerLecturas();
-        List<Lectura> ObtenerLecturasPorMedidor(string numeroSerie);
         void AgregarLectura(Lectura lectura);
     }
 }

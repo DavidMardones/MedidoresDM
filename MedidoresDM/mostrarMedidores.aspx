@@ -1,23 +1,19 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Principal.master" AutoEventWireup="true" CodeBehind="MostrarLecturas.aspx.cs" Inherits="MedidoresDM.MostrarLecturas" Title="Mostrar Lecturas" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="MostrarMedidores.aspx.cs" Inherits="MedidoresDM.MostrarMedidores" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="Contenido" Runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="Contenido" runat="server">
+    <div class="container">
+        <h1>Mostrar Medidores</h1>
+        <asp:DropDownList ID="ddlTipo" runat="server" CssClass="form-control" AutoPostBack="True" OnSelectedIndexChanged="ddlTipo_SelectedIndexChanged">
+            <asp:ListItem Text="Todos" Value=""></asp:ListItem>
 
-</asp:Content>
+        </asp:DropDownList>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="Contenido" Runat="Server">
-    <h1>Mostrar Lecturas</h1>
+        <asp:GridView ID="gridMedidores" runat="server" CssClass="table table-striped table-bordered">
+            <Columns>
+                <asp:BoundField DataField="NumeroSerie" HeaderText="Número de Serie" />
+                <asp:BoundField DataField="Tipo" HeaderText="Tipo" />
 
-    <asp:DropDownList ID="ddlMedidores" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlMedidores_SelectedIndexChanged">
-        <asp:ListItem Text="Todos" Value="0"></asp:ListItem>
-    </asp:DropDownList>
-
-    <br /><br />
-
-    <asp:GridView ID="gvLecturas" runat="server" AutoGenerateColumns="False" Width="600px">
-        <Columns>
-            <asp:BoundField DataField="Fecha" HeaderText="Fecha" DataFormatString="{0:dd/MM/yyyy}" />
-            <asp:BoundField DataField="Hora" HeaderText="Hora" DataFormatString="{0:HH:mm}" />
-            <asp:BoundField DataField="ValorConsumo" HeaderText="Valor de Consumo" />
-        </Columns>
-    </asp:GridView>
+            </Columns>
+        </asp:GridView>
+    </div>
 </asp:Content>

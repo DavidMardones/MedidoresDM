@@ -15,15 +15,6 @@ namespace MedidoresDM
     {
 
         /// <summary>
-        /// Control form1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
         /// Control ddlTipo.
         /// </summary>
         /// <remarks>
@@ -33,12 +24,12 @@ namespace MedidoresDM
         protected global::System.Web.UI.WebControls.DropDownList ddlTipo;
 
         /// <summary>
-        /// Control gvMedidores.
+        /// Control gridMedidores.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvMedidores;
+        protected global::System.Web.UI.WebControls.GridView gridMedidores;
     }
 }

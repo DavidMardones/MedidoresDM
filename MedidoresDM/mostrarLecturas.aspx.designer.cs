@@ -15,21 +15,21 @@ namespace MedidoresDM
     {
 
         /// <summary>
-        /// Control ddlMedidores.
+        /// Control ddlMedidor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlMedidores;
+        protected global::System.Web.UI.WebControls.DropDownList ddlMedidor;
 
         /// <summary>
-        /// Control gvLecturas.
+        /// Control gridLecturas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvLecturas;
+        protected global::System.Web.UI.WebControls.GridView gridLecturas;
     }
 }

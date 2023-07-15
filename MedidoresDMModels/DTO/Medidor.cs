@@ -4,14 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MedidoresDMModels.DTO
+namespace MedidoresDMModels
 {
     public class Medidor
     {
-        private string numeroSerie;
-        private string tipo;
-
-        public string NumeroSerie { get => numeroSerie; set => numeroSerie = value; }
-        public string Tipo { get => tipo; set => tipo = value; }
+        public int NumeroSerie { get; set; }
+        public string Tipo { get; set; }
     }
 }

@@ -1,6 +1,8 @@
 ﻿using MedidoresDMModels.DAL;
+using MedidoresDMModels;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -18,33 +20,44 @@ namespace MedidoresDM
             }
         }
 
-        protected void ddlMedidor_SelectedIndexChanged(object sender, EventArgs e)
-        {
- 
-        }
-
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
             if (Page.IsValid)
             {
+                try
+                {
+                    int medidorNumeroSerie = int.Parse(ddlMedidor.SelectedValue);
+                    DateTime fecha = DateTime.Parse(txtFecha.Value);
+                    TimeSpan hora = TimeSpan.Parse(txtHora.Text);
+                    decimal valorConsumo = decimal.Parse(txtValorConsumo.Text);
 
-                string medidorSeleccionado = ddlMedidor.SelectedValue;
-                DateTime fechaLectura = calFecha.SelectedDate;
-                int hora = Convert.ToInt32(txtHora.Text);
-                int minutos = Convert.ToInt32(txtMinutos.Text);
-                int consumo = Convert.ToInt32(txtConsumo.Text);
+                    Lectura lectura = new Lectura
+                    {
+                        MedidorNumeroSerie = medidorNumeroSerie,
+                        Fecha = fecha,
+                        Hora = hora,
+                        ValorConsumo = valorConsumo
+                    };
 
-                LecturasDALObjetos.AgregarLectura(medidorSeleccionado, fechaLectura, hora, minutos, consumo);
 
-                Response.Redirect("MostrarLecturas.aspx");
+                    ILecturasDAL lecturasDAL = new LecturasDALObjetos();
+                    lecturasDAL.AgregarLectura(lectura);
+
+
+                    Response.Redirect("MostrarLecturas.aspx");
+                }
+                catch (Exception ex)
+                {
+
+                }
             }
         }
 
         private void CargarMedidores()
         {
 
-            var medidores = MedidoresDALObjetos.ObtenerMedidores();
-
+            IMedidorDAL medidorDAL = new MedidorDALObjetos();
+            var medidores = medidorDAL.ObtenerMedidores();
 
             ddlMedidor.DataSource = medidores;
             ddlMedidor.DataTextField = "NumeroSerie";

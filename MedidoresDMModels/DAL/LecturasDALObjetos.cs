@@ -1,4 +1,4 @@
-﻿using MedidoresDMModels.DTO;
+﻿using MedidoresDMModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace MedidoresDMModels.DAL
 {
-    public class LecturaDALObjetos : ILecturasDAL
+    public class LecturasDALObjetos : ILecturasDAL
     {
-        private static List<Lectura> listaLecturas = new List<Lectura>();
+        private static List<Lectura> lecturas = new List<Lectura>();
 
         public List<Lectura> ObtenerLecturas()
         {
-            return listaLecturas;
+            return lecturas;
         }
 
         public void AgregarLectura(Lectura lectura)
         {
-            listaLecturas.Add(lectura);
+            lecturas.Add(lectura);
         }
     }
-
+}

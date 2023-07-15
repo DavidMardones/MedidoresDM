@@ -1,38 +1,67 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="MedidoresDM.Principal" %>
 
 <!DOCTYPE html>
-
 <html>
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
- 
-    <title>StarCap</title>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedidoresDM</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <header class="container-fluid bg-dark text-white">
-            <h1>StarCap Puntos</h1>
-            <div class="mt-5">
+    <form runat="server">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="Default.aspx">MedidoresDM</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="Default.aspx">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="MostrarMedidores.aspx">Mostrar Medidores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="IngresarLectura.aspx">Ingresar Lectura</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="MostrarLecturas.aspx">Mostrar Lecturas</a>
+                            </li>
 
-                <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticDisplayLevels="2"></asp:Menu>
-                <asp:SiteMapDataSource runat="server" ID="SiteMapDataSource1"></asp:SiteMapDataSource>
-                <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" : ">
-                    <CurrentNodeStyle ForeColor="#333333" />
-                    <NodeStyle Font-Bold="True" ForeColor="#990000" />
-                    <PathSeparatorStyle Font-Bold="True" ForeColor="#990000" />
-                    <RootNodeStyle Font-Bold="True" ForeColor="#FF8000" />
-                </asp:SiteMapPath>
-            </div>
-
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
-        
-        <div class="container-fluid mt-5">
-            <asp:ContentPlaceHolder ID="Contenido" runat="server">
 
+        <div class="container">
+            <asp:ContentPlaceHolder ID="Contenido" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="MapaSitio" runat="server">
+
+                <div class="mapa-sitio">
+                    <h2>Mapa del Sitio</h2>
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server" />
+                </div>
             </asp:ContentPlaceHolder>
         </div>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2023 MedidoresDM. Todos los derechos reservados.</p>
+            </div>
+        </footer>
     </form>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
 </body>
 </html>

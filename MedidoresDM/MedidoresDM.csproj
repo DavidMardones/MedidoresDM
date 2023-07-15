@@ -67,40 +67,40 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ingresarLectura.aspx" />
-    <Content Include="IngresarMedidor.aspx" />
-    <Content Include="mostrarLecturas.aspx" />
-    <Content Include="mostrarMedidores.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="IngresarLectura.aspx" />
+    <Content Include="MostrarLecturas.aspx" />
+    <Content Include="MostrarMedidores.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ingresarLectura.aspx.cs">
-      <DependentUpon>ingresarLectura.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ingresarLectura.aspx.designer.cs">
-      <DependentUpon>ingresarLectura.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="IngresarMedidor.aspx.cs">
-      <DependentUpon>IngresarMedidor.aspx</DependentUpon>
+    <Compile Include="IngresarLectura.aspx.cs">
+      <DependentUpon>IngresarLectura.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="IngresarMedidor.aspx.designer.cs">
-      <DependentUpon>IngresarMedidor.aspx</DependentUpon>
+    <Compile Include="IngresarLectura.aspx.designer.cs">
+      <DependentUpon>IngresarLectura.aspx</DependentUpon>
     </Compile>
-    <Compile Include="mostrarLecturas.aspx.cs">
-      <DependentUpon>mostrarLecturas.aspx</DependentUpon>
+    <Compile Include="MostrarLecturas.aspx.cs">
+      <DependentUpon>MostrarLecturas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="mostrarLecturas.aspx.designer.cs">
-      <DependentUpon>mostrarLecturas.aspx</DependentUpon>
+    <Compile Include="MostrarLecturas.aspx.designer.cs">
+      <DependentUpon>MostrarLecturas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="mostrarMedidores.aspx.cs">
-      <DependentUpon>mostrarMedidores.aspx</DependentUpon>
+    <Compile Include="MostrarMedidores.aspx.cs">
+      <DependentUpon>MostrarMedidores.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="mostrarMedidores.aspx.designer.cs">
-      <DependentUpon>mostrarMedidores.aspx</DependentUpon>
+    <Compile Include="MostrarMedidores.aspx.designer.cs">
+      <DependentUpon>MostrarMedidores.aspx</DependentUpon>
     </Compile>
     <Compile Include="Principal.Master.cs">
       <DependentUpon>Principal.Master</DependentUpon>

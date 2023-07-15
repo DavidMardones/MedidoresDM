@@ -15,22 +15,13 @@ namespace MedidoresDM
     {
 
         /// <summary>
-        /// Control form1.
+        /// Control ValidationSummary1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
-        /// Control lblMedidor.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMedidor;
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
 
         /// <summary>
         /// Control ddlMedidor.
@@ -42,31 +33,31 @@ namespace MedidoresDM
         protected global::System.Web.UI.WebControls.DropDownList ddlMedidor;
 
         /// <summary>
-        /// Control lblFecha.
+        /// Control rfvMedidor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFecha;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvMedidor;
 
         /// <summary>
-        /// Control calFecha.
+        /// Control txtFecha.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar calFecha;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtFecha;
 
         /// <summary>
-        /// Control lblHora.
+        /// Control rfvFecha.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHora;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFecha;
 
         /// <summary>
         /// Control txtHora.
@@ -78,58 +69,49 @@ namespace MedidoresDM
         protected global::System.Web.UI.WebControls.TextBox txtHora;
 
         /// <summary>
-        /// Control txtMinutos.
+        /// Control rfvHora.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMinutos;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvHora;
 
         /// <summary>
-        /// Control rvHora.
+        /// Control revHora.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator rvHora;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revHora;
 
         /// <summary>
-        /// Control rvMinutos.
+        /// Control txtValorConsumo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator rvMinutos;
+        protected global::System.Web.UI.WebControls.TextBox txtValorConsumo;
 
         /// <summary>
-        /// Control lblConsumo.
+        /// Control rfvValorConsumo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblConsumo;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvValorConsumo;
 
         /// <summary>
-        /// Control txtConsumo.
+        /// Control rvValorConsumo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtConsumo;
-
-        /// <summary>
-        /// Control rvConsumo.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator rvConsumo;
+        protected global::System.Web.UI.WebControls.RangeValidator rvValorConsumo;
 
         /// <summary>
         /// Control btnGuardar.

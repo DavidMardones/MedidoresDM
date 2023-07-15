@@ -1,4 +1,4 @@
-﻿using MedidoresDMModels.DTO;
+﻿using MedidoresDMModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +11,5 @@ namespace MedidoresDMModels.DAL
     {
         List<Medidor> ObtenerMedidores();
         void AgregarMedidor(Medidor medidor);
-        bool ExisteMedidor(string numeroSerie);
     }
 }
